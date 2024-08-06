@@ -1,0 +1,67 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:table="sap.ui.mdc.table" controllerName="com.ingenx.studentfronted.controller.StudentRecord"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+        <tnt:ToolHeader  class="sapUiTinyMargin" style="Standard">
+            	<Title text="Student Records" wrapping="false" id="productName">
+			</Title>
+        </tnt:ToolHeader>
+       <FlexBox justifyContent="End" class="sapUiTinyMargin Table" >
+         <Button text="Add Record"  class="sapUiTinyMargin" press="onPressAddRecord"></Button>
+        <Button text="Update"  class="sapUiTinyMargin" press="onPressUpdate"></Button>
+        <Button text="Delete"  class="sapUiTinyMargin"></Button>
+       </FlexBox>
+
+    <FlexBox class="sapUiTinyMargin Table">
+        <Table id="studentTable" items="{/studentsRecord}" mode="SingleSelectLeft">
+        <columns>
+            <Column>
+                <Label text="ID"/>
+            </Column>
+            <Column>
+                <Label text="First Name"/>
+            </Column>
+            <Column>
+                <Label text="Last Name"/>
+            </Column>
+            <Column>
+                <Label text="Email"/>
+            </Column>
+            <Column>
+                <Label text="Phone"/>
+            </Column>
+            <Column>
+                <Label text="Date of Birth"/>
+            </Column>
+            <Column>
+                <Label text="Age"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{ID}"/>
+                </cells>
+                <cells>
+                    <Text text="{firstName}"/>
+                </cells>
+                    <cells>
+                    <Text text="{lastName}"/>
+                </cells>
+                    <cells>
+                    <Text text="{email}"/>
+                </cells>
+                <cells>
+                    <Text text="{phone}"/>
+                </cells>
+                    <cells>
+                    <Text text="{dateOfBirth}"/>
+                </cells>
+                    <cells>
+                    <Text text="{age}"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+    </FlexBox>
+    
+</mvc:View>

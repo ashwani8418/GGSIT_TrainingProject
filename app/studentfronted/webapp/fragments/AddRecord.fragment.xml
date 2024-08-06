@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog id="AddRecord" title="Add Record">
+        <form:SimpleForm >
+            <form:content>
+                <Label id="firstName" text="First Name"></Label>
+                <Input id="inputFirstName" value=""></Input>
+                <Label text="Last Name"></Label>
+                <Input id="inputLastName" value=""></Input>
+                <Label text="Email"></Label>
+                <Input id="inputEmail" value=""></Input>
+                <Label text="Phone Number"></Label>
+                <Input id="inputPhone" value=""></Input>
+                <Label text="Date of Birth"></Label>
+                <!-- <Input id="inputDateOfBirth" value=""></Input> -->
+                <DatePicker id="inputDateOfBirth" change="calculateAge" displayFormat="YYYY-MM-dd" valueFormat="YYYY-MM-dd"></DatePicker>
+                <Label text="Age"></Label>
+                <Input id="inputAge" editable="false" visible="false" value=""></Input>
+            </form:content>
+        </form:SimpleForm>
+        <beginButton>
+            <Button id="submitAddRecord" text="Submit" type="Emphasized" press="onSubmitAddRecord"></Button>
+        </beginButton>
+        <endButton>
+            <Button id="closeAddRecord" text="Close" type="Reject" press="onCloseDialog"></Button>
+        </endButton>
+   </Dialog>
+</core:FragmentDefinition>
+

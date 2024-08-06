@@ -1,0 +1,46 @@
+### To send read request
+
+GET http://localhost:4004/odata/v4/trainingproject-srv/studentsRecord
+
+###
+
+GET http://localhost:4004/odata/v4/trainingproject-srv/Address
+
+###
+POST http://localhost:4004/odata/v4/trainingproject-srv/studentsRecord
+Content-Type: application/json
+
+{
+
+    "firstName" : "Hello",
+    "lastName" : "Technology",
+    "email" : "info@ingenxtec.com",
+    "phone" : "938475743",
+    "dateOfBirth" : "2016-08-03",
+    "age" : 8
+}
+
+###
+PUT http://localhost:4004/odata/v4/trainingproject-srv/studentsRecord(1)
+Content-Type: application/json
+
+{
+    "firstName" : "Ingenx",
+    "lastName" : "Technology",
+    "email" : "xyzzz@ingenxtec.com",
+    "phone" : "938475743",
+    "dateOfBirth" : "2016-08-03",
+    "age" : 8
+}
+
+###
+PATCH http://localhost:4004/odata/v4/trainingproject-srv/studentsRecord(6)
+Content-Type: application/json
+
+{
+    "firstName" : "Ingenx Pvt",
+    "email" : "asdfg@ingenxtec.com"
+}
+
+###
+DELETE http://localhost:4004/odata/v4/trainingproject-srv/studentsRecord(340)

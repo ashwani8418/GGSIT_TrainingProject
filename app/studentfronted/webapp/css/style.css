@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+.Table{
+    margin: 0.1rem;
+    border: 0.1rem solid rgb(107, 105, 105);
+    border-radius: 5px;
+    background-color: rgb(239, 244, 244);
+}

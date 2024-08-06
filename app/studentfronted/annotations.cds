@@ -1,0 +1,1 @@
+using trainingprojectSrv as service from '../../srv/service';
