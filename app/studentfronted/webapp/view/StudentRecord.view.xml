@@ -8,7 +8,7 @@
        <FlexBox justifyContent="End" class="sapUiTinyMargin Table" >
          <Button text="Add Record"  class="sapUiTinyMargin" press="onPressAddRecord"></Button>
         <Button text="Update"  class="sapUiTinyMargin" press="onPressUpdate"></Button>
-        <Button text="Delete"  class="sapUiTinyMargin"></Button>
+        <Button text="Delete"  class="sapUiTinyMargin" press="onPressDelete"></Button>
        </FlexBox>
 
     <FlexBox class="sapUiTinyMargin Table">
